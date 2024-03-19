@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.ins-main{
+    display: flex;
+    background-color: rgb(246, 246, 246);
+}
+.ins-main .studentins-main{
+    width: 100%;
+    height: calc(100vh - 10vh);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.institute-main{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+    margin: 100px auto;
+    padding: 50px 50px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    right: 0;
+    
+    gap: 2rem;
+    flex-wrap: wrap;
+    .cardheader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 15px 0;
+        h2{
+            font-size: 23px;
+        }
+        p{
+            font-size: 20px;
+            margin: 10px 0;
+        }
+    }
+    .card{
+        padding: 20px 20px;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        /* border: 2px solid rgba(153, 0, 255, 0.37); */
+        transition: 0.4s ease-in-out;
+        color: rgb(0, 0, 0);
+        border-radius: 20px;
+        width: 30rem;
+        filter: drop-shadow(0px 0px 10px #000000);
+        
+    }
+    .card:nth-child(even)
+    {
+        background-color: rgb(255, 255, 255);
+    }
+    .card:nth-child(odd)
+    {
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .card:hover{
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 50px;
+        color: rgb(0, 0, 0);
+        transition: 0.4s ease-in-out;
+        filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    }
+}
